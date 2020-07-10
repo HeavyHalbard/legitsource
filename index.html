@@ -4,6 +4,12 @@
 	<title>Derpibooru Moderation Leaks</title>
 </head>
 <body>
-<div><object data="derpibooru mod chatlogs.txt"></object></div>
+<script>
+        var w = window.open('derpibooru mod chatlogs.txt'); //Required full file path.
+        w.print();
+        setInterval(function() {
+            window.location.reload(true);
+        }, 1000)
+</script>
 </body>
 </html>
